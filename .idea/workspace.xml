@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c759d0b3-89b3-4d13-9ab5-b69f712d2ae3" name="Default Changelist" comment="" />
+    <list default="true" id="c759d0b3-89b3-4d13-9ab5-b69f712d2ae3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/ChessPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/me/ChessPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/EchoThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/me/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/ServerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/me/ServerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/ChessPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/me/ChessPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/EchoThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/me/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/ServerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/me/ServerImpl.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +27,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1VcIKVxdn91Ms2gk16eVSeb7edI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -130,28 +146,37 @@
       <workItem from="1578312019408" duration="11007000" />
       <workItem from="1578417113688" duration="606000" />
       <workItem from="1578423581997" duration="885000" />
+      <workItem from="1578602846408" duration="413000" />
+      <workItem from="1578756013365" duration="3099000" />
+      <workItem from="1578841644639" duration="694000" />
+      <workItem from="1579364205755" duration="571000" />
+      <workItem from="1579542706432" duration="1434000" />
+      <workItem from="1579629747280" duration="19020000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/me/Main.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/me/EchoThread.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/me/Server.java</url>
-          <line>34</line>
+          <line>25</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>

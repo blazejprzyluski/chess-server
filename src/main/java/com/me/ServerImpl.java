@@ -13,6 +13,7 @@ public class ServerImpl {
     private final ServerSocket serverSocket;
     private ChessPlayer playerOne;
     private ChessPlayer playerTwo;
+    private ChessPlayer dummy;
 
     public ServerImpl() throws IOException {
         this.serverSocket = new ServerSocket(PORT);
@@ -20,36 +21,31 @@ public class ServerImpl {
 
     public void start() throws IOException {
         System.out.println("Waiting for connections.");
-        do {
-            playerOne = new ChessPlayer(serverSocket.accept());
-            System.out.println("Player one connected.");
-            playerOne.sendData(new IncomingData(WHITE, null));
-            playerTwo = new ChessPlayer(serverSocket.accept());
-            System.out.println("Player two connected.");
-            playerTwo.sendData(new IncomingData(BLACK, null));
-        }while(playerTwo == null);
+        playerOne = new ChessPlayer(serverSocket.accept());
+        System.out.println("Player one connected.");
+        playerOne.sendData(new IncomingData(WHITE, null));
+        playerTwo = new ChessPlayer(serverSocket.accept());
+        System.out.println("Player two connected.");
+        playerTwo.sendData(new IncomingData(BLACK, null));
+
+        dummy = new ChessPlayer(serverSocket.accept());
+        System.out.println("Helper for player has connected");
+        dummy.start();
 
         playerOne.start();
         playerTwo.start();
-    }
-
-    public ServerSocket getServerSocket() {
-        return serverSocket;
     }
 
     public ChessPlayer getPlayerOne() {
         return playerOne;
     }
 
-    public void setPlayerOne(ChessPlayer playerOne) {
-        this.playerOne = playerOne;
-    }
 
     public ChessPlayer getPlayerTwo() {
         return playerTwo;
     }
 
-    public void setPlayerTwo(ChessPlayer playerTwo) {
-        this.playerTwo = playerTwo;
+    public ChessPlayer getDummy() {
+        return dummy;
     }
 }
