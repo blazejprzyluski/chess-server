@@ -2,17 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c759d0b3-89b3-4d13-9ab5-b69f712d2ae3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/Board/Coord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/Board/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/me/Board/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/Board/Tile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/Board/Util.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/me/ChessPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/me/ChessPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/EchoThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/IncomingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/me/IncomingData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/me/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/me/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/me/ServerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/me/ServerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/pieces/Beat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/pieces/Bishop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/pieces/King.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/pieces/Knight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/pieces/Move.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/pieces/Pawn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/pieces/Piece.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/pieces/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/pieces/Queen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/me/pieces/Rook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/Board/Coord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/Board/GameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/me/Board/GameBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/Board/Tile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/Board/Util.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/me/ChessPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/me/ChessPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/me/EchoThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/me/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/IncomingData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/me/IncomingData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/me/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/me/Server.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/me/ServerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/me/ServerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/pieces/Beat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/pieces/Bishop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/pieces/King.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/pieces/Knight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/pieces/Move.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/pieces/Pawn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/pieces/Piece.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/pieces/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/pieces/Queen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/me/pieces/Rook.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,10 +61,11 @@
   <component name="ProjectId" id="1VcIKVxdn91Ms2gk16eVSeb7edI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/me/pieces" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.40588236" />
@@ -170,16 +199,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/me/Server.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

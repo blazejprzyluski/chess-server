@@ -26,19 +26,20 @@ public class ChessPlayer extends Thread {
         }
     }
 
-    public void sendData(IncomingData data) {
+    void sendData(IncomingData data) {
         OutputStream oStream = null;
         try {
             oStream = this.socket.getOutputStream();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        assert oStream != null;
         PrintWriter pWriter = new PrintWriter(oStream, true);
         pWriter.println(createJSON(data));
         pWriter.flush();
     }
 
-    public IncomingData getData() throws IOException {
+    IncomingData getData() throws IOException {
         InputStream iStream = null;
         try {
             iStream = this.socket.getInputStream();
