@@ -1,12 +1,10 @@
 package com.me;
 
-import com.me.pieces.Player;
-
 import java.io.IOException;
 import java.net.ServerSocket;
 
-import static com.me.pieces.Player.BLACK;
-import static com.me.pieces.Player.WHITE;
+import static com.me.Board.Player.BLACK;
+import static com.me.Board.Player.WHITE;
 
 public class ServerImpl {
     private final int PORT = 5000;
@@ -20,36 +18,23 @@ public class ServerImpl {
 
     public void start() throws IOException {
         System.out.println("Waiting for connections.");
-        do {
-            playerOne = new ChessPlayer(serverSocket.accept());
-            System.out.println("Player one connected.");
-            playerOne.sendData(new IncomingData(WHITE, null));
-            playerTwo = new ChessPlayer(serverSocket.accept());
-            System.out.println("Player two connected.");
-            playerTwo.sendData(new IncomingData(BLACK, null));
-        }while(playerTwo == null);
+        playerOne = new ChessPlayer(serverSocket.accept());
+        System.out.println("Player one connected.");
+        playerOne.sendData(new IncomingData(WHITE, null));
+        playerTwo = new ChessPlayer(serverSocket.accept());
+        System.out.println("Player two connected.");
+        playerTwo.sendData(new IncomingData(BLACK, null));
 
         playerOne.start();
         playerTwo.start();
-    }
-
-    public ServerSocket getServerSocket() {
-        return serverSocket;
     }
 
     public ChessPlayer getPlayerOne() {
         return playerOne;
     }
 
-    public void setPlayerOne(ChessPlayer playerOne) {
-        this.playerOne = playerOne;
-    }
 
     public ChessPlayer getPlayerTwo() {
         return playerTwo;
-    }
-
-    public void setPlayerTwo(ChessPlayer playerTwo) {
-        this.playerTwo = playerTwo;
     }
 }

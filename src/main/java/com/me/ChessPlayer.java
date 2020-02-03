@@ -1,14 +1,12 @@
 package com.me;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.me.pieces.Player;
 
 import java.io.*;
 import java.net.Socket;
 
 public class ChessPlayer extends Thread {
     private Socket socket;
-    private IncomingData data;
 
     public ChessPlayer(Socket socket) {
         this.socket = socket;
@@ -26,22 +24,22 @@ public class ChessPlayer extends Thread {
                 // Oh, well!
             }
         }
-
     }
 
-    public void sendData(IncomingData data) {
+    void sendData(IncomingData data) {
         OutputStream oStream = null;
         try {
             oStream = this.socket.getOutputStream();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        assert oStream != null;
         PrintWriter pWriter = new PrintWriter(oStream, true);
         pWriter.println(createJSON(data));
         pWriter.flush();
     }
 
-    public IncomingData getData() throws IOException {
+    IncomingData getData() throws IOException {
         InputStream iStream = null;
         try {
             iStream = this.socket.getInputStream();
@@ -49,8 +47,8 @@ public class ChessPlayer extends Thread {
             e.printStackTrace();
         }
         BufferedReader receiveRead = new BufferedReader(new InputStreamReader(iStream));
-        this.data = readFromJSON(receiveRead.readLine());
-        return this.data;
+        IncomingData data = readFromJSON(receiveRead.readLine());
+        return data;
     }
 
     private IncomingData readFromJSON(String data) {

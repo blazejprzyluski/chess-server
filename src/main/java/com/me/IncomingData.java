@@ -1,6 +1,6 @@
 package com.me;
 
-import com.me.pieces.Player;
+import com.me.Board.Player;
 
 import java.util.Objects;
 
